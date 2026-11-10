@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ABSOLUTE SOLVER // DATABASE</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./games.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <div class="logo-symbol">
+          <img class="imgg" src="./solver_icon_40x40.png" alt="" />
+        </div>
+
+        <div>
+          <h2>ABSOLUTE SOLVER</h2>
+          <p>// DRONE DATABASE</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="./index.html">DATABASE</a>
+        <a href="#system">SYSTEM</a>
+        <a href="./main.html">INFORMATION</a>
+      </nav>
+
+      <div class="online">● ONLINE</div>
+    </header>
+
+    <section class="game-section">
+      <div class="game">
+        <h1 class="hh">
+          <img src="./solver_icon_40x40.png" alt="" />
+
+          SOLV GAME
+        </h1>
+
+        <div class="score">Счёт: <span id="score">0</span></div>
+
+        <canvas id="game" width="400" height="400"></canvas>
+
+        <h2 id="message">Нажми SPACE чтобы начать</h2>
+        <div class="speed-control">
+          <label for="speed">SPEED:</label>
+          <input type="range" id="speed" min="50" max="300" value="180" />
+          <span id="speedValue">160</span>
+        </div>
+
+        <button onclick="restartGame()">RESTART</button>
+
+        <p>Управление: </p>
+      </div>
+      <div>
+        <div class="mobile-controls">
+
+    <button class="up" onclick="mobileMove('UP')">▲</button>
+
+    <div class="middle-controls">
+        <button onclick="mobileMove('LEFT')">◀</button>
+        <button onclick="mobileMove('DOWN')">▼</button>
+        <button onclick="mobileMove('RIGHT')">▶</button>
+    </div>
+
+</div>
+      </div>
+    </section>
+    <script src="./games.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --black: #070808;
+  --dark: #101212;
+  --dark2: #161919;
+  --border: #343838;
+
+  --white: #eeeeea;
+  --gray: #8b908c;
+
+  --yellow: #eaff00;
+  --red: #ff5656;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+
+  font-family: "Orbitron", sans-serif;
+
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== ФОН ===== */
+
+body::before {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle at 80% 10%,
+    rgba(234, 255, 0, 0.08),
+    transparent 30%
+  );
+
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  opacity: 0.06;
+
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 3px,
+    white 4px
+  );
+
+  z-index: 30;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  height: 78px;
+
+  padding: 0 6%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--border);
+
+  background: rgba(7, 8, 8, 0.9);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 20;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.logo-symbol {
+  color: var(--yellow);
+
+  font-size: 30px;
+
+  text-shadow:
+    0 0 10px var(--yellow),
+    0 0 30px var(--yellow);
+    animation: rotate 30s linear infinite;
+}
+
+.logo h2 {
+  font-size: 14px;
+
+  letter-spacing: 2px;
+}
+
+.logo p {
+  font-family: "Share Tech Mono";
+
+  color: var(--gray);
+
+  font-size: 10px;
+
+  margin-top: 4px;
+}
+
+nav {
+  display: flex;
+
+  gap: 30px;
+}
+
+nav a {
+  font-family: "Share Tech Mono";
+
+  color: #999;
+
+  font-size: 11px;
+
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--yellow);
+  font-size: 15px;
+  transition:transform 0.3s ease-in-out;
+}
+
+.online {
+  color: var(--yellow);
+
+  border: 1px solid #444;
+
+  padding: 10px 13px;
+
+  font-family: "Share Tech Mono";
+
+  font-size: 10px;
+}

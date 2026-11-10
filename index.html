@@ -1,0 +1,3357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABSOLUTE SOLVER // DATABASE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- не тирся в коде
+         сломаеш👌-->
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-symbol"><img class="imgg" src="./solver_icon_40x40.png" alt=""></div>
+
+            <div>
+                <h2>ABSOLUTE SOLVER</h2>
+                <p>// DRONE DATABASE</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#database">DATABASE</a>
+            <a href="#system">SYSTEM</a>
+            <a href="./main.html">INFORMATION</a>
+        </nav>
+
+        <div class="online">
+            ● ONLINE
+        </div>
+
+    </header>
+
+
+    <!-- Главная -->
+    <section class="hero" id="home">
+
+        <div class="code-background">
+
+            //:absoluteSolver_translate<br>
+            //:absoluteSolver_rotate<br>
+            //:absoluteSolver_scale<br>
+            //:absoluteSolver_edit<br>
+            //:absoluteSolver_execute<br>
+            //:absoluteSolver_access<br>
+            //:absoluteSolver_core<br>
+            //:system_error_01101100<br>
+            //:unknown_entity<br>
+            //:terminateNode[0]<br>
+
+        </div>
+
+
+        <div class="hero-content">
+
+            <p class="mini-title">
+                COPPER-9 // CLASSIFIED DATABASE
+            </p>
+
+            <h1>
+                MURDER
+                <br>
+                <span>DRONES</span>
+            </h1>
+
+            <p class="description">
+                База данных персонажей и дронов.
+                Найди нужную информацию через поиск.
+            </p>
+
+            <a href="#database" class="main-button">
+                OPEN DATABASE →
+            </a>
+
+        </div>
+
+
+        <div class="solver">
+
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+
+            <div class="solver-icon">
+                <img class="imgg" src="./emblem_hex_centered_300x300.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- База -->
+    <section class="database" id="database">
+
+        <div class="database-title">
+
+            <div>
+                <p class="mini-title">
+                    DATABASE // SEARCH
+                </p>
+
+                <h2>
+                    DRONE ARCHIVE
+                </h2>
+            </div>
+
+            <div class="records">
+                RECORDS:
+                <span id="counter">0</span>
+            </div>
+
+        </div>
+
+
+        <!-- Поиск -->
+        <div class="search-container">
+
+            <div class="search">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search drone / character / ID..."
+                >
+
+                <span class="shortcut">
+                    CTRL + K
+                </span>
+
+            </div>
+
+
+            <!-- Фильтры -->
+            <div class="filters">
+
+                <button class="filter active" data-filter="all">
+                    ALL
+                </button>
+
+                <button class="filter" data-filter="worker">
+                    WORKER
+                </button>
+
+                <button class="filter" data-filter="disassembly">
+                    DISASSEMBLY
+                </button>
+
+                <button class="filter" data-filter="solver">
+                    SOLVER
+                </button>
+
+                <button class="filter" data-filter="human">
+                    HUMAN
+                </button>
+
+                <button class="filter" data-filter="animal">
+                    ANIMAL
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Карточки не трогат-->
+        <div class="cards" id="cards">
+
+
+            <!-- КАРТОЧКА 1 РАБОЧИЕ ДРОНЫ-->
+            <article
+                class="card"
+                data-type="worker"
+                data-name="UZI"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.redd.it/scxruk3yh2fb1.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        UZI
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        UZI
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('UZI', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article UZI>
+
+            
+            <article
+                class="card"
+                data-type="worker"
+                data-name="KHAN">
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://pbs.twimg.com/profile_images/1979263788944650240/_ARJo4H9_400x400.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        KHAN
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        KHAN
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('KHAN', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article KHAN>
+
+             <article
+                class="card"
+                data-type="worker"
+                data-name="LIZZY"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlQvMkLZNS02oNSRg638MclO-i5SlR_kbibnotnP6N2twvppfLONvuvYyf&s=10" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        LIZZY
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        LIZZY
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('LIZZY', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article LIZZY>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="THED"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7IN05FSvicGPr-1VqVAzQ2ZGnGtaIw0AIQ6WBDGX-usL-N2iYrAdFaXJ&s=10" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        THED
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        THED
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('THED', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article THED>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="SAM"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.redd.it/2o8sl8hmqalg1.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        SAM
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                      SAM
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('SAM', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article SAM>
+
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name=" BUTLER N"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.redd.it/txjia6ypjddc1.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                    BUTLER N
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                         BUTLER N
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('BUTLER N', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article BUTLER N>
+
+             <article
+                class="card"
+                data-type="worker"
+                data-name=" HOUSEMAID V"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://preview.redd.it/guys-is-there-some-reason-why-butler-v-looks-shy-while-in-v0-s5wta2z35p4e1.jpeg?auto=webp&s=d7abe89497c0b006bfea2861fa1244613763479e" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                    HOUSEMAID V
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                         HOUSEMAID V
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('HOUSEMAID V', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article HOUSEMAID V>
+
+             <article
+                class="card"
+                data-type="worker"
+                data-name=" HOUSEMAID J"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.redd.it/057y2dg8npid1.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                    HOUSEMAID J
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                         HOUSEMAID J
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('HOUSEMAID J', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article HOUSEMAID J>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="TEACHER"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.pinimg.com/736x/bc/73/03/bc7303ccc40c85e6eee36ed43560fd2a.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        TEACHER
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        TEACHER
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('TEACHER', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article TEACHER>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="ALICE"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://preview.redd.it/alice-inadvertently-saved-the-world-v0-cyjmx81ximfe1.jpeg?width=1125&format=pjpg&auto=webp&s=e520dcb4e5047a4ef004ede12f7bb170eb972381" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        ALICE
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        ALICE
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('ALICE', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article ALICE>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="BEAU"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://preview.redd.it/what-do-you-think-about-beau-v0-ik0q1gaijguc1.jpeg?auto=webp&s=47e65d75269883926ded7f48c2585634957d667f" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        BEAU
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        BEAU
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('BEAU', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article BEAU>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="AMDA"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.redd.it/fn94lv8l68jd1.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        AMDA
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        AMDA
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('AMDA', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article AMDA>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="DARREN"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnpc2Xp7e766OBfUDQzQUmS7blKaRShjF1WIBUx_SgEjSooyZAJPDlh_F1&s=10" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        DARREN
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        DARREN
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('DARREN', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article DARREN>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="BRAXTON"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://static.wikia.nocookie.net/3f04a580-1877-40f3-ba1c-4ba58782912d/scale-to-width/755" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        BRAXTON
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        BRAXTON
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('BRAXTON', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article BRAXTON>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="BRAIDEN"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.pinimg.com/1200x/59/19/f5/5919f52c24f1d018e84ddeefca710b7d.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        BRAIDEN
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        BRAIDEN
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('BRAIDEN', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article BRAIDEN>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="GRANT"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://preview.redd.it/what-is-the-most-gruesome-death-in-murder-drones-v0-23sedv2u9hre1.png?width=1080&format=png&auto=webp&s=d8e25653717bbd0c060bdb98dfc2733fa1e9c967" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        GRANT
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        GRANT
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('GRANT', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article GRANT>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="EMILY"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://ella.janitorai.com/bot-avatars/0788e02c-a49c-407e-9d19-63451351ec8a_e6458369-3593-4b69-b8da-855790282d24.png?width=1200" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        EMILY
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        EMILY
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('EMILY', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article EMILY>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="PENNY"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://static.wikia.nocookie.net/fe502fca-5108-4f7f-9950-549c16dbf1d3/scale-to-width/755" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        PENNY
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        PENNY
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('PENNY', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article PENNY>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="MAKAROV"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://static.wikia.nocookie.net/a755fa36-85ca-4808-9f0b-6ca14aaed919/scale-to-width/370" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        MAKAROV
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        MAKAROV
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('MAKAROV', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article MAKAROV>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="REID"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://static.wikia.nocookie.net/1fa91442-44a8-4caa-b1bd-5e65bbf982d2/scale-to-width/370" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        REID
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        REID
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('REID', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article REID>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="REBECCA"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.pinimg.com/236x/e3/16/cb/e316cb7a897918b5c3fdc0f991cef64d.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        REBECCA
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        REBECCA
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('REBECCA', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article REBECCA>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="RON"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://assets.mycast.io/characters/ronathon-157988908-normal.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        RON
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        RON
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('RON', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article RON>
+
+            <article
+                class="card"
+                data-type="worker"
+                data-name="RILEY"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://static.wikia.nocookie.net/44d6f28a-3b54-4060-b8fe-cdf4a1e10538/scale-to-width/755" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        RILEY
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        RILEY
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('RILEY', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article RILEY>
+
+             <article
+                class="card"
+                data-type="worker"
+                data-name="TIM"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://preview.redd.it/match-2-of-the-side-character-tournament-vote-for-your-v0-o0pyreddwowd1.png?width=617&format=png&auto=webp&s=dc26321ea81702ec761ad6b4874447c52cb2d7ae" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        TIM
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        TIM
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('TIM', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article TIM>
+
+             <article
+                class="card"
+                data-type="worker"
+                data-name="SARAH"
+            >
+
+                <div class="card-image">
+
+                    <!-- ЗАМЕНИ НА СВОЮ КАРТИНКУ -->
+                    <img src="https://i.pinimg.com/736x/8c/0a/40/8c0a407edb9b54a7c374739faa4e5655.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 01
+                    </div>
+
+                    <span class="card-id">
+                        SARAH
+                    </span>
+
+                    <span class="danger">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        WORKER DRONE
+                    </p>
+
+                    <!-- СЮДА ИМЯ -->
+                    <h3>
+                        SARAH
+                    </h3>
+
+                    <!-- СЮДА ОПИСАНИЕ -->
+                    <p class="card-description">
+                        Здесь будет твоя информация
+                        о персонаже или дроне.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>WORKER</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('SARAH', 'WORKER DRONE', 'HIGH', 'Здесь будет полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article SARAH>
+
+
+
+
+
+
+            
+
+
+            <!-- КАРТОЧКА 2 ДЕМАНТАЖНИКИ -->
+                        <article
+                class="card"
+                data-type="disassembly"
+                data-name="N "
+            >
+
+                <div class="card-image">
+
+                    <img src="https://i.redd.it/hcnga68qoq3b1.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 02
+                    </div>
+
+                    <span class="card-id">
+                        N
+                    </span>
+
+                    <span class="danger critical">
+                        CRITICAL
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        DISASSEMBLY DRONE
+                    </p>
+
+                    <h3>
+                        N
+                    </h3>
+
+                    <p class="card-description">
+                        Здесь будет информация
+                        о втором персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>DISASSEMBLY</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('N', 'DISASSEMBLY DRONE', 'CRITICAL', 'Полная информация о втором персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article N>
+
+
+            <article
+                class="card"
+                data-type="disassembly"
+                data-name="N CORE "
+            >
+
+                <div class="card-image">
+
+                    <img src="https://preview.redd.it/why-do-hearts-look-so-cute-v0-8yr7kcr3spyf1.jpg?width=873&format=pjpg&auto=webp&s=31ef57de4e8ce2ff109ed8f73500cdd423b10b08" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 02
+                    </div>
+
+                    <span class="card-id">
+                        N CORE
+                    </span>
+
+                    <span class="danger critical">
+                        CRITICAL
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        DISASSEMBLY DRONE
+                    </p>
+
+                    <h3>
+                        N CORE
+                    </h3>
+
+                    <p class="card-description">
+                        Здесь будет информация
+                        о втором персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>DISASSEMBLY</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('N CORE', 'DISASSEMBLY DRONE', 'CRITICAL', 'Полная информация о втором персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article N CORE>
+
+             <article
+                class="card"
+                data-type="disassembly"
+                data-name="V"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://m.media-amazon.com/images/M/MV5BN2M5NjM3ZjktYTE4NC00NWM5LWJiMmEtYzhhOTMxM2UyYmRiXkEyXkFqcGc@._V1_.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 02
+                    </div>
+
+                    <span class="card-id">
+                        V
+                    </span>
+
+                    <span class="danger critical">
+                        CRITICAL
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        DISASSEMBLY DRONE
+                    </p>
+
+                    <h3>
+                        V
+                    </h3>
+
+                    <p class="card-description">
+                        Здесь будет информация
+                        о втором персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>DISASSEMBLY</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('V', 'DISASSEMBLY DRONE', 'CRITICAL', 'Полная информация о втором персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article V>
+
+            <article
+                class="card"
+                data-type="disassembly"
+                data-name="J"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://preview.redd.it/how-much-redeemable-is-j-in-your-opinion-v0-ctttyqxj0vqe1.jpeg?auto=webp&s=9f72c56f2c21a95d421da6111208b682fdd2acc2" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 02
+                    </div>
+
+                    <span class="card-id">
+                        J
+                    </span>
+
+                    <span class="danger critical">
+                        CRITICAL
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        DISASSEMBLY DRONE
+                    </p>
+
+                    <h3>
+                        J
+                    </h3>
+
+                    <p class="card-description">
+                        Здесь будет информация
+                        о втором персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>DISASSEMBLY</span>
+                        <span>UNKNOWN</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('J', 'DISASSEMBLY DRONE', 'CRITICAL', 'Полная информация о втором персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article J>
+
+
+
+            <!-- КАРТОЧКА 3 ДРОНЫ С СОЛВЕРОМ -->
+            <article
+                class="card"
+                data-type="solver"
+                data-name="CYNTESSA"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://preview.redd.it/now-that-the-series-is-over-what-yalls-opinion-on-cyn-v0-8x0wqxm41jkd1.jpeg?auto=webp&s=4de4087eac12f53df971a3e8ff836cc8f351c519" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 03
+                    </div>
+
+                    <span class="card-id">
+                        CYNTESSA
+                    </span>
+
+                    <span class="danger critical">
+                        UNKNOWN
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ABSOLUTE SOLVER
+                    </p>
+
+                    <h3>
+                        CYNTESSA
+                    </h3>
+
+                    <p class="card-description">
+                        Добавь сюда информацию
+                        о персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>SOLVER</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('CYN', 'ABSOLUTE SOLVER', 'UNKNOWN', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article CYNTESSA>
+
+             <article
+                class="card"
+                data-type="solver"
+                data-name="UZI WITCH"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://i.redd.it/0c1cjxb77wxd1.png" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 03
+                    </div>
+
+                    <span class="card-id">
+                        UZI WITCH
+                    </span>
+
+                    <span class="danger critical">
+                        UNKNOWN
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ABSOLUTE SOLVER
+                    </p>
+
+                    <h3>
+                        UZI WITCH
+                    </h3>
+
+                    <p class="card-description">
+                        Добавь сюда информацию
+                        о персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>SOLVER</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('UZI WITCH', 'ABSOLUTE SOLVER', 'UNKNOWN', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article UZI WITCH>
+
+            <article
+                class="card"
+                data-type="solver , worker"
+                data-name="DOLL"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://i.redd.it/n17znxddd0ag1.jpg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 03
+                    </div>
+
+                    <span class="card-id">
+                        DOLL
+                    </span>
+
+                    <span class="danger critical">
+                        UNKNOWN
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ABSOLUTE SOLVER
+                    </p>
+
+                    <h3>
+                        DOLL
+                    </h3>
+
+                    <p class="card-description">
+                        Добавь сюда информацию
+                        о персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>SOLVER</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('DOLL', 'ABSOLUTE SOLVER', 'UNKNOWN', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article DOLL>
+
+            <article
+                class="card"
+                data-type="solver , worker"
+                data-name="NORI"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://i.redd.it/j9jmxb1e6pac1.png" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 03
+                    </div>
+
+                    <span class="card-id">
+                        NORI
+                    </span>
+
+                    <span class="danger critical">
+                        UNKNOWN
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ABSOLUTE SOLVER
+                    </p>
+
+                    <h3>
+                        NORI
+                    </h3>
+
+                    <p class="card-description">
+                        Добавь сюда информацию
+                        о персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>SOLVER</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('NORI', 'ABSOLUTE SOLVER', 'UNKNOWN', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article NORI>
+
+            <article
+                class="card"
+                data-type="solver , worker"
+                data-name="YEVA"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGy7KerbFlBUQ2dEVJCsye1sKcpj6mVsJKRf_Ra9cCnQGjd7VWVgo4mA&s=10" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 03
+                    </div>
+
+                    <span class="card-id">
+                        YEVA
+                    </span>
+
+                    <span class="danger critical">
+                        UNKNOWN
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ABSOLUTE SOLVER
+                    </p>
+
+                    <h3>
+                        YEVA
+                    </h3>
+
+                    <p class="card-description">
+                        Добавь сюда информацию
+                        о персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>SOLVER</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('YEVA', 'ABSOLUTE SOLVER', 'UNKNOWN', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article YEVA>
+
+            <article
+                class="card"
+                data-type="solver , worker"
+                data-name="CYN"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8b2I6y89t6O4rewNxQ4TMlbN7qKpxokt1pak9V75cu19Up--tt_Ac0LP&s=10" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 03
+                    </div>
+
+                    <span class="card-id">
+                        CYN
+                    </span>
+
+                    <span class="danger critical">
+                        UNKNOWN
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ABSOLUTE SOLVER
+                    </p>
+
+                    <h3>
+                        CYN
+                    </h3>
+
+                    <p class="card-description">
+                        Добавь сюда информацию
+                        о персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>SOLVER</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('CYN', 'ABSOLUTE SOLVER', 'UNKNOWN', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article CYN>
+
+            <article
+                class="card"
+                data-type="solver"
+                data-name="NORI CORE"
+            >
+
+                <div class="card-image">
+
+                    <img src="https://i.redd.it/576ncr8h64re1.jpeg" alt="Drone">
+
+                    <div class="image-placeholder">
+                        PHOTO 03
+                    </div>
+
+                    <span class="card-id">
+                        NORI CORE
+                    </span>
+
+                    <span class="danger critical">
+                        UNKNOWN
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ABSOLUTE SOLVER
+                    </p>
+
+                    <h3>
+                        NORI CORE
+                    </h3>
+
+                    <p class="card-description">
+                        Добавь сюда информацию
+                        о персонаже.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>SOLVER</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('NORI CORE', 'ABSOLUTE SOLVER', 'UNKNOWN', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article NORI CORE>
+
+
+            <!-- КАРТОЧКА 4 ЛЮДИ-->
+            <article
+                class="card"
+                data-type="human"
+                data-name="JAMES ELLIOTT"
+            >
+
+                <div class="card-image">
+
+                <img src="https://static.wikia.nocookie.net/murder-drones/images/2/22/Bro_yelled_At_His_Daughter_for_trying_to_save_everyone.png/revision/latest/scale-to-width-down/250?cb=20230612134838" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        JAMES ELLIOTT
+                    </span>
+
+                    <span class="danger low">
+                        LOW
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        HUMAN
+                    </p>
+
+                    <h3>
+                        JAMES ELLIOTT
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>HUMAN</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('JAMES ELLIOTT', 'HUMAN', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article JAMES ELLIOTT>
+
+            <article
+                class="card"
+                data-type="human"
+                data-name="LUISA ELLIOTT"
+            >
+
+                <div class="card-image">
+
+                <img src="https://static.wikia.nocookie.net/villains/images/8/8f/Louisa_Elliot.webp/revision/latest?cb=20230814081953" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        LUISA ELLIOTT
+                    </span>
+
+                    <span class="danger low">
+                        LOW
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        HUMAN
+                    </p>
+
+                    <h3>
+                        LUISA ELLIOTT
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>HUMAN</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('LUISA ELLIOTT', 'HUMAN', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article LUISA ELLIOTT>
+
+            <article
+                class="card"
+                data-type="human"
+                data-name="TESSA ELLIOTT"
+            >
+
+                <div class="card-image">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5JddmbcRVTLWWRexdCD_av4MEQEYFRURIDbdTEgmpLHw3pSJZjueBT-X&s=10" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        TESSA ELLIOTT
+                    </span>
+
+                    <span class="danger low">
+                        LOW
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        HUMAN
+                    </p>
+
+                    <h3>
+                        TESSA ELLIOTT
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>HUMAN</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('TESSA ELLIOTT', 'HUMAN', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article TESSA ELLIOT>
+
+            <article
+                class="card"
+                data-type="human"
+                data-name="MITCHELL"
+            >
+
+                <div class="card-image">
+
+                <img src="https://preview.redd.it/can-we-talk-about-the-clutch-mitchell-intern-pulled-off-v0-zofrgiu3jfud1.jpeg?width=1080&crop=smart&auto=webp&s=91aa74a58403ee5b86c038c9755ed2c1bd56efbc" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        MITCHELL
+                    </span>
+
+                    <span class="danger low">
+                        LOW
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        HUMAN
+                    </p>
+
+                    <h3>
+                        MITCHELL
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>HUMAN</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('MITCHELL', 'HUMAN', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article MITCHELL>
+
+            <article
+                class="card"
+                data-type="human"
+                data-name="DR. CHAMBERS"
+            >
+
+                <div class="card-image">
+
+                <img src="https://i.redd.it/5dldjpj0t8pc1.png" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        DR. CHAMBERS
+                    </span>
+
+                    <span class="danger low">
+                        LOW
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        HUMAN
+                    </p>
+
+                    <h3>
+                       DR. CHAMBERS
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>HUMAN</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('DR. CHAMBERS', 'HUMAN', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article DR. CHAMBERS>
+
+                        <article
+                class="card"
+                data-type="human"
+                data-name="DR. RIDLEY"
+            >
+
+                <div class="card-image">
+
+                <img src="https://static.wikia.nocookie.net/supermarioglitchy4/images/d/d7/Dr._Ridley.png/revision/latest/scale-to-width-down/1200?cb=20240329231655" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        DR. RIDLEY
+                    </span>
+
+                    <span class="danger low">
+                        LOW
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        HUMAN
+                    </p>
+
+                    <h3>
+                        DR. RIDLEY
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>HUMAN</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('DR. RIDLEY', 'HUMAN', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article DR. RIDLEY>
+
+            <article
+                class="card"
+                data-type="human"
+                data-name="TESSA "
+            >
+
+                <div class="card-image">
+
+                <img src="https://i.redd.it/un5wf0xte9uc1.jpeg" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        TESSA
+                    </span>
+
+                    <span class="danger low">
+                        LOW
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        HUMAN
+                    </p>
+
+                    <h3>
+                        TESSA
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>HUMAN</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('TESSA', 'HUMAN', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article TESSA>
+
+
+
+
+
+
+
+
+
+
+            <!--КАРТОЧКА 5 ЖИВОТНИЕ-->
+            <article
+                class="card"
+                data-type="animal"
+                data-name="SENTINELS"
+            >
+
+                <div class="card-image">
+
+                <img src="https://i.redd.it/m5d9x6t91sge1.png" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        SENTINELS
+                    </span>
+
+                    <span class="danger low">
+                        :p
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ANIMAL
+                    </p>
+
+                    <h3>
+                        SENTINELS
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>ANIMAL</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('SENTINELS', 'ANIMAL', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article SENTINELS>
+
+            <article
+                class="card"
+                data-type="animal"
+                data-name="SENTINELS"
+            >
+
+                <div class="card-image">
+
+                <img src="https://preview.redd.it/i-used-to-think-sparky-was-being-controlled-by-doll-v0-1zb9895vch8f1.jpeg?auto=webp&s=b3f202f18b2b65eee47cc5d58d23ed132974a8e9" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        SPARKY
+                    </span>
+
+                    <span class="danger low">
+                        :p
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ANIMAL
+                    </p>
+
+                    <h3>
+                        SPARKY
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>ANIMAL</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('SPARKY', 'ANIMAL', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article SPARKY>
+
+            <article
+                class="card"
+                data-type="animal"
+                data-name="SENTINELS"
+            >
+
+                <div class="card-image">
+
+                <img src="https://preview.redd.it/cyns-new-feats-i-know-its-just-an-official-music-video-but-v0-sw9eoi16kqvf1.png?width=640&crop=smart&auto=webp&s=00958a667513d4a68328894eb360d0ebf104be19" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        ZOMBIE SPARKY
+                    </span>
+
+                    <span class="danger low">
+                        :p
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ANIMAL
+                    </p>
+
+                    <h3>
+                        ZOMBIE SPARKY
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>ANIMAL</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('ZOMBIE SPARKY', 'ANIMAL', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article ZOMBIE SPARKY>
+
+            <article
+                class="card"
+                data-type="animal"
+                data-name="DARK WOLF 17 ( UZI )"
+            >
+
+                <div class="card-image">
+
+                <img src="https://i.pinimg.com/736x/12/89/59/128959cd770560cc17a627dfc18f57a1.jpg" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        DARK WOLF 17 ( UZI )
+                    </span>
+
+                    <span class="danger low">
+                        :p
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ANIMAL
+                    </p>
+
+                    <h3>
+                        DARKX WOLF 17 < UZI >
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>ANIMAL</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('DARKX WOLF 17', 'ANIMAL', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article UZI DARKX WOLF 17>
+
+            <article
+                class="card"
+                data-type="animal"
+                data-name="BUG"
+            >
+
+                <div class="card-image">
+
+                <img src="https://i.redd.it/tumrc8gezjsd1.jpg" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                        BUG
+                    </span>
+
+                    <span class="danger low">
+                        :p
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ANIMAL
+                    </p>
+
+                    <h3>
+                        BUG
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>ANIMAL</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('BUG', 'ANIMAL', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article BUG>
+
+            <article
+                class="card"
+                data-type="animal"
+                data-name="KEY BUG"
+            >
+
+                <div class="card-image">
+
+                <img src="https://static.wikia.nocookie.net/8e285537-0ab7-4b62-b1c2-91dab2b43240/scale-to-width/370" alt="Character">
+
+                    <div class="image-placeholder">
+                        PHOTO 04
+                    </div>
+
+                    <span class="card-id">
+                       KEY BUG
+                    </span>
+
+                    <span class="danger low">
+                        :p
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="designation">
+                        ANIMAL
+                    </p>
+
+                    <h3>
+                        KEY BUG
+                    </h3>
+
+                    <p class="card-description">
+                        Вставь сюда описание
+                        персонажа.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>ANIMAL</span>
+                        <span>CLASSIFIED</span>
+
+                    </div>
+
+
+                    <button
+                        class="details"
+                        onclick="openCard('KEY BUG', 'ANIMAL', 'LOW', 'Полная информация о персонаже.')"
+                    >
+                        ACCESS FILE ↗
+                    </button>
+
+                </div>
+
+            </article KEY BUG>
+
+            
+
+
+
+
+
+        </div>
+
+
+        <!-- Если ничего не найдено -->
+        <div id="noResults" class="no-results">
+
+            <div>⌁</div>
+
+            <h3>
+                NO RECORD FOUND
+            </h3>
+
+            <p>
+                Попробуй изменить поисковый запрос.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Система -->
+     <section class="about" id="system">
+
+        <div class="section-number">
+            03 // ФАНАТСКИЙ ПРОЕКТ
+        </div>
+
+        <h2>
+            COPPER-9
+        </h2>
+
+        <p>
+            Фанатский сайт по вселенной Murder Drones.
+            Здесь собраны персонажи, информация о дронах
+            и материалы, посвящённые Murder drones.
+        </p>
+
+        <div class="warning">
+            ⚠ ЭТО ФАНАТСКИЙ САЙТ
+        </div>
+
+    </section>
+
+   
+
+    <footer>
+
+        <p>
+            © 2026 // MURDER DRONES DATABASE
+        </p>
+
+        <p>
+            ABSOLUTE SOLVER //
+            <span>SYSTEM ACTIVE</span>
+        </p>
+
+    </footer>
+
+
+
+    <!-- ОКНО ИНФОРМАЦИИ -->
+    <div class="modal" id="modal">
+
+        <div class="modal-window">
+
+            <button
+                class="close"
+                onclick="closeCard()"
+            >
+                ×
+            </button>
+
+
+            <p class="mini-title">
+                CLASSIFIED RECORD
+            </p>
+
+            <h2 id="modalTitle">
+                CHARACTER
+            </h2>
+
+            <div class="modal-line"></div>
+
+
+            <div class="modal-info">
+
+                <div>
+                    <span>DESIGNATION</span>
+                    <b id="modalDesignation">
+                        ---
+                    </b>
+                </div>
+
+                <div>
+                    <span>THREAT</span>
+                    <b id="modalThreat">
+                        ---
+                    </b>
+                </div>
+
+            </div>
+
+
+            <p
+                class="modal-description"
+                id="modalDescription"
+            >
+                ---
+            </p>
+
+
+            <div class="binary">
+                01000001 01000010 01010011<br>
+                01001111 01001100 01010101 01010100 01000101<br>
+                01010011 01001111 01001100 01010110 01000101 01010010
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
